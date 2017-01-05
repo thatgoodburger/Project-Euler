@@ -13,14 +13,18 @@ public class SolutionTest {
     private static final ArrayList<Integer> fibNumsThroughTwo;
     private static final ArrayList<Integer> fibNumsThroughTen;
 
+    // initialize static vars
     static {
+
         fibNumsThroughOne = new ArrayList<Integer>() {{
             add(1);
         }};
+
         fibNumsThroughTwo = new ArrayList<Integer>() {{
             add(1);
             add(2);
         }};
+
         fibNumsThroughTen = new ArrayList<Integer>() {{
             add(1);
             add(2);
@@ -46,7 +50,12 @@ public class SolutionTest {
     }
 
     @Test
-    public void testGetFibNums() throws Exception {
+    public void testSolution() throws Exception {
+        Solution solution = new Solution();
+    }
+
+    @Test
+    public void testGetFibNumsNoFilter() throws Exception {
         Assert.assertEquals(Solution.getFibNums(1), fibNumsThroughOne);
         Assert.assertEquals(Solution.getFibNums(2), fibNumsThroughTwo);
         Assert.assertEquals(Solution.getFibNums(10), fibNumsThroughTen);
