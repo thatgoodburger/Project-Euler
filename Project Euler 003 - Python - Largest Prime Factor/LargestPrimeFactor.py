@@ -8,8 +8,8 @@ FLT_LOAD = 15
 def main():
     args = get_input()
 
-    for i in range(0, len(args)):
-        print(process_input(args[i]))
+    for i in args:
+        print(process_input(i))
 
 
 # Ask for a list of numbers from the user and return as an array
